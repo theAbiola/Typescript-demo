@@ -19,4 +19,20 @@ function createUser2(user: User) {
 }
 createUser2({ name: 'Habib', email: 'myEmail@gmail.com', isPaid: true });
 
+
+type newUser = {
+    readonly _id: string; //readonly means the value cannot be changed
+    name: string;
+    email: string;
+    isActive: boolean;
+}
+
+let user1: newUser = {
+    _id: '123',
+    name: 'Habib',
+    email: 'myEmail@gmail.com',
+    isActive: false
+}
+
+console.log(user1);
 export { }
