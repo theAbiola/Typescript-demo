@@ -7,3 +7,7 @@ createUser({ name: 'Habib', isPaid: true });
 function createCourse() {
     return { name: 'ReactJS', price: 100 };
 }
+function createUser2(user) {
+    console.log(user);
+}
+createUser2({ name: 'Habib', email: 'myEmail@gmail.com', isPaid: true });
