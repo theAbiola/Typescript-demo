@@ -25,14 +25,19 @@ type newUser = {
     name: string;
     email: string;
     isActive: boolean;
+    readonly favFoods: string[]; //readonly means the value cannot be changed and the array can only contain strings
 }
 
 let user1: newUser = {
     _id: '123',
     name: 'Habib',
     email: 'myEmail@gmail.com',
-    isActive: false
+    isActive: false,
+    favFoods: ['Rice', 'Beans'] //This is allowed
 }
 
+user1.name = 'Habibat'; //This is allowed
+user1.favFoods.push('Yam'); //This is allowed eventhough favFoods is readonly because we are not changing the array itself but adding to it
+// user1.favFoods = ['Rice', 'Beans', 'Yam']; //This is not allowed because we are changing the array itself
 console.log(user1);
 export { }
