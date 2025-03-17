@@ -51,7 +51,7 @@ type CardDetails = {
 }
 type Card = CardNumber & CardDetails & {
     cvv: number;
-}; //This is an intersection type
+}; //This is an intersection type we use the & to combine the types
 
 let myCard: Card = {
     cardNum: 123456789,
