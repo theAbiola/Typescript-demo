@@ -20,3 +20,12 @@ type User = {
 //THIRD METHOD USING TYPE ALIASES
 const newUSer: User[] = [];
 newUSer.push({ name: 'Sadiq', email: 's@gmail.com', isActive: true })
+
+
+//FOURTH METHOD USING THE ARRAY OBJECT: Using an array inside an array type
+const coordinates: number[][] = [
+    [10, 20],
+    [30, 40],
+    [50, 60],
+]
+console.log(coordinates);
