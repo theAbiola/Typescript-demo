@@ -26,7 +26,7 @@ type newUser = {
     email: string;
     isActive: boolean;
     readonly favFoods: string[]; //readonly means the value cannot be changed and the array can only contain strings
-    creditCard?: number; //This is optional
+    creditCard?: number; //This is optional. It means that the creditCard property is not compulsory
 }
 
 let user1: newUser = {
