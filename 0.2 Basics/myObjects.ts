@@ -9,7 +9,7 @@ function createCourse(): { name: string, price: number } { //what the function s
 
 //TYPE ALIAS
 type User = { //creating our own type which is an object with the datatypes that we set inside it(TYPE ALIAS)
-    name: string;
+    name: string;//notice how we use a semi colon at the end of each entry since we are defining an object type alias
     email: string;
     isPaid: boolean;
 }
