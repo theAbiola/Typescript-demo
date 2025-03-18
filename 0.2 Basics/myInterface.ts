@@ -1,4 +1,5 @@
-//interfaces are used to define the structure of an object
+//interfaces are used to define the structure of an object that we want to use in multiple places
+//They are a bit similar to type aliases but they are more flexible bcus they allow us to use functions as their values
 
 interface User {
     id: number,
