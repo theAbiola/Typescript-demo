@@ -7,5 +7,5 @@ var rgb = [255, 125, 150]; //This is a tuple
 var person1 = [1, 'Habib', 'myemail@mail.com']; //This is a tuple
 person1[1] = 'Habibat'; //This is allowed
 //tuples have an issue with the push method because it can change the order of the elements in the tuple
-/*Example:*/ person1.push(40);
-console.log(person1); //This is allowed even though we are changing the order of the elements in the tuple 
+/*Example:*/ person1.push(40); //This shouldn't be allowed bcus it would mean that we are changing the order of the elements in the tuple that we set in the 'Person' type alias
+console.log(person1);

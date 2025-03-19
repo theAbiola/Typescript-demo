@@ -1,7 +1,7 @@
 //interfaces are used to define the structure of an object that we want to use in multiple places
 //They are a bit similar to type aliases but they are more flexible bcus they allow us to use functions as their values
 
-interface User {
+interface User2 {
     readonly id: number,
     name: string,
     email: string,
@@ -13,11 +13,11 @@ interface User {
 }
 
 //REOPENING THE INTERFACE TO ADD MORE VALUES
-interface User {
+interface User2 {
     adminToken: string; //We can add more properties to the interface even if we declared the interface object in line 4 above
 }
 
-let user1: User = {
+let user1: User2 = {
     id: 1,
     name: 'Habib',
     email: 'ah@email.com',
@@ -37,11 +37,11 @@ console.log(user1.getCoupon('Freebie', 10));
 
 
 //EXTENDING THE INTERFACE
-interface Admin extends User { //extending an interface means that we create another inteface that has the properties of that interface and we can add peculiar properties to the new interface
-    role: 'admin' | 'superadmin'
+interface Admin2 extends User2 { //extending an interface means that we create another inteface that has the properties of that interface and we can add peculiar properties to the new interface
+    role: 'admin' | 'superadmin' | 'executive'
 }
 
-let admin1: Admin = {
+let admin1: Admin2 = {
     id: 2,
     name: 'Habib',
     role: 'admin',

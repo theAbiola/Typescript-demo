@@ -11,7 +11,7 @@ powerLevel.push(9000);
 //THIRD METHOD USING TYPE ALIASES
 var newUSer = [];
 newUSer.push({ name: 'Sadiq', email: 's@gmail.com', isActive: true });
-//FOURTH METHOD USING THE ARRAY OBJECT
+//FOURTH METHOD USING THE ARRAY OBJECT: Using an array inside an array type
 var coordinates = [
     [10, 20],
     [30, 40],

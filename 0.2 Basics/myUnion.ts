@@ -11,12 +11,12 @@ type Player = {
     name: string;
     id: number;
 }
-type Admin = {
+type Admin1 = {
     username: string;
     id: number;
 }
 
-let Habib: Player | Admin = {
+let Habib: Player | Admin1 = {
     name: 'Habib',
     id: 1
 }

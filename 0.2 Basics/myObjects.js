@@ -22,3 +22,9 @@ user1.name = 'Habibat'; //This is allowed
 user1.favFoods.push('Yam'); //This is allowed eventhough favFoods is readonly because we are not changing the array itself but adding to it
 // user1.favFoods = ['Rice', 'Beans', 'Yam']; //This is not allowed because we are changing the array itself
 console.log(user1);
+var myCard = {
+    cardNum: 123456789,
+    cardData: '12/23',
+    cvv: 123
+};
+console.log(myCard);

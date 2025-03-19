@@ -11,14 +11,14 @@ favNumbers.push(7);
 const powerLevel: Array<number> = []; //initialized as an empty array that should only contain numbers. Works the same way as the first method
 powerLevel.push(9000);
 
-type User = {
+type User1 = {
     name: string;
     email: string;
     isActive: boolean;
 }
 
 //THIRD METHOD USING TYPE ALIASES
-const newUSer: User[] = [];
+const newUSer: User1[] = [];
 newUSer.push({ name: 'Sadiq', email: 's@gmail.com', isActive: true })
 
 

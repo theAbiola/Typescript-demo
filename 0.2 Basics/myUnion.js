@@ -16,3 +16,17 @@ function getDBId(id) {
     console.log("DB ID is ".concat(id));
 }
 getDBId(4);
+getDBId('4');
+function getIdType(id) {
+    if (typeof id === 'number') {
+        console.log('This is a number');
+    }
+    else if (typeof id === 'string') {
+        console.log(id.toLowerCase());
+    }
+}
+var data = ['Habib', 1, 'Musa', 2]; //shows that data can accept an array of a mixture of numbers and strings
+console.log(data);
+var data2 = ['Habib', 'Musa', 'Sadiq']; //shows that data2 can only accept an array of strings or an array of numbers
+var seatAllotment = 'aisle'; //shows that seatAllotment can only be either 'aisle', 'middle' or 'window'
+//seatAllotment = 'side' //This is not allowed because 'side' is not part of the types that seatAllotment can be
