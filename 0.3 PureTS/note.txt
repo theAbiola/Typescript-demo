@@ -1,0 +1,3 @@
+The /dist folder stands for DISTRIBUTION. It is where we would usually write production ready code
+
+The /src folder stands for SOURCE. It is where we would write code undergoing development
