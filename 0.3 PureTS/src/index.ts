@@ -1,7 +1,7 @@
 class User {
     name: string;
     email: string;
-    private readonly city: string = '' //private means we can only access this property inside the User class declaration
+    private readonly city: string = 'Abuja' //private means we can only access this property inside the User class declaration, readonly means we can only read its value
     constructor(name: string, email: string) {
         this.name = name;
         this.email = email;
@@ -9,12 +9,14 @@ class User {
     }
 }
 
+
+//EASIER METHOD OF WRITING THE CLASS TO AVOID USING THE 'This' KEYWORD
 class User2 {
-    private readonly city: string = '' //private means we can only access this property inside the User class declaration
+    private readonly city: string = 'Abidjan' //private means we can only access this property inside the User class declaration
     constructor(
-        public name: string,
+        public name: string, //all values are set to public by default but we use it here to 
         public email: string,
-        //private city: string
+        //private userId: string
     ) {
     }
 }
